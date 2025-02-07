@@ -70,6 +70,7 @@ header ul li a:hover {
   transition: all 0.3s ease 0s;
 }
 
+
 /* Hero Section */
 section.hero-section {
   background-color: var(--dark-primary);

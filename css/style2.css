@@ -23,6 +23,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
 /* Header */
 header {
   position: fixed;
@@ -69,6 +70,8 @@ header ul li a:hover {
   color: var(--primary);
   transition: all 0.3s ease 0s;
 }
+
+
 
 /* Hero Section */
 section.hero-section {
@@ -413,14 +416,24 @@ body {
 }
 
 .gauge {
-  width: 100px;
-  height: 100px;
-  position: relative;
+  width: 120px;  /* Standardized size */
+  height: 120px; /* Standardized size */
+  min-width: 120px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 svg {
   transform: rotate(-90deg);
+  width: 100px;  /* Ensures a consistent width */
+  height: 100px; /* Ensures a consistent height */
 }
+
+
 
 .label {
   position: absolute;
@@ -432,22 +445,23 @@ svg {
 }
 
 .value {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  dominant-baseline: middle; /* Ensures correct vertical alignment */
+  alignment-baseline: middle;
+  text-anchor: middle;
   font-size: 16px;
   font-weight: bold;
-  white-space: nowrap;
+  fill: black; /* Ensures visibility */
 }
+
 
 .horizontal-values {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly; /* Ensures even spacing */
   align-items: center;
-  gap: 15px;
-  margin-top: 20px;
+  flex-wrap: wrap; /* Allows wrapping in case Chrome has layout issues */
+  width: 100%; /* Ensures proper width */
 }
+
 
 
 /* Contact Section */
