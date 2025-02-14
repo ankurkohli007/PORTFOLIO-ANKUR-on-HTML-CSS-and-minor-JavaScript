@@ -7,3 +7,12 @@ document.addEventListener("click", function (event) {
     document.getElementById("themeStylesheet").setAttribute("href", themeFile);
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("show");
+  });
+});
