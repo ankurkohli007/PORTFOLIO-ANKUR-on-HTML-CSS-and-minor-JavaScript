@@ -30,7 +30,6 @@ Portfolio/
 │── css/
     ├── styles1.css      # Style 1
     ├── styles2.css      # Style 2
-    ├── styles3.css      # Style 3 for all allprojects.html
 ├── js/
     ├── script.js      # event listener that dynamically changes the theme of a webpage when a user clicks on a theme button
     ├── animation.js      # for animation of gauges such as to show the exact value of the publications such as patents, book chapters, conference papers, research score, citations & h-index.      
