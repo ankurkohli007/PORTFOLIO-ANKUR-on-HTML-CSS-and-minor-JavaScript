@@ -916,3 +916,209 @@ footer a {
     width: 100%;
   }
 }
+
+/* ======================================================
+   UNIVERSAL RESPONSIVE FIXES (add at the end of your CSS)
+   ====================================================== */
+
+/* Tablets & smaller laptops */
+@media (max-width: 1024px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+
+  header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section.hero-section {
+    padding: 120px 60px 50px 60px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    margin: 30px 0 0 0;
+    width: 80%;
+  }
+
+  section.career-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 60px 40px;
+  }
+
+  .career-img img {
+    margin: 0;
+  }
+
+  .career-content {
+    margin: 0;
+  }
+
+  section.publications-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .publications-content {
+    margin: 0;
+  }
+
+  .projects-section {
+    padding: 60px 40px;
+  }
+
+  .professional-content {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    padding: 0 40px;
+  }
+
+  .pro_exp1 h2 span,
+  .pro_exp2 h2 span,
+  .pro_exp1 h4 span,
+  .pro_exp2 h4 span {
+    margin-left: 0 !important;
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+/* Tablets and Large Phones (Portrait Mode) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  header .logo {
+    margin: 0 0 10px 0;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.hero-section {
+    padding: 130px 30px 50px 30px;
+  }
+
+  .hero-section__title {
+    font-size: 32px;
+  }
+
+  .hero-img img {
+    display: none;
+  }
+
+  section.career-section,
+  section.publications-section {
+    padding: 50px 20px;
+    gap: 30px;
+  }
+
+  .career-content h2,
+  .publications-content h2 {
+    font-size: 26px;
+  }
+
+  .career-content p,
+  .publications-content p {
+    font-size: 14px;
+  }
+
+  .projects-section {
+    padding: 40px 20px;
+  }
+
+  .projects-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .pro_exp1, .pro_exp2 {
+    padding: 0 10px;
+  }
+
+  .pro_exp1 h2 span,
+  .pro_exp2 h2 span,
+  .pro_exp1 h4 span,
+  .pro_exp2 h4 span {
+    margin-left: 0 !important;
+    display: block;
+    text-align: left;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  header ul li {
+    margin-right: 15px;
+  }
+
+  .hero-section__title {
+    font-size: 28px;
+  }
+
+  .hero-section__desc {
+    font-size: 14px;
+  }
+
+  .career-img img,
+  .publications-img img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .career-content h2,
+  .publications-content h2 {
+    font-size: 24px;
+  }
+
+  .projects-section h2 {
+    font-size: 22px;
+  }
+
+  .contact-section h2 {
+    font-size: 22px;
+  }
+
+  .contact-btn {
+    width: 80%;
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 15px 5px;
+  }
+
+  footer .footer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .pro_exp1 ul li,
+  .pro_exp2 ul li {
+    font-size: 14px;
+  }
+}
