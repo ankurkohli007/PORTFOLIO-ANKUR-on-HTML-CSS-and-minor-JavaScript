@@ -30,12 +30,12 @@
 
         <div class="nav-links">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#career-identity">Career Identity</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" title="Home" tooltip-bottom small-tooltip>Home</a></li>
+                <li><a href="#career-identity" title="Career Identity" tooltip-bottom small-tooltip>Career Identity</a></li>
+                <li><a href="#professional-experience" title="Professional Experience" tooltip-bottom small-tooltip>Professional Experience</a></li>
+                <li><a href="#projects" title="Projects" tooltip-bottom small-tooltip>Projects</a></li>
+                <li><a href="#publications" title="Publications" tooltip-bottom small-tooltip>Publications</a></li>
+                <li><a href="#contact" title="Contact" tooltip-bottom small-tooltip>Contact</a></li>
             </ul>
         </div>
 
@@ -51,19 +51,26 @@
                     <h2 class="hero-section__title">ANKUR KOHLI <br> <span>Software Engineer</span></h2>
                     <p class="hero-section__desc" align="justify">I’m a Software Engineer focused on building scalable,
                         intelligent, and high performance systems that blend clean architecture with real world
-                        functionality. With expertise in Python, C++, Java, JavaScript, Dart (Flutter), and modern
+                        functionality. With expertise in Python, C/C++, Java, JavaScript, Dart (Flutter), and modern
                         development practices, I design and deploy cross platform applications that run seamlessly
                         across mobile, web, and desktop.
                         <br>
                         <br>
-                        I specialize in API driven client server development, realtime systems, and ROS2 based backends,
-                        ensuring efficient, low latency communication between components. From intuitive Flutter UIs to
-                        robust backend integrations, I deliver software that’s reliable, responsive, and built for
-                        longterm scalability.
+                        I have extensive experience designing and deploying realtime systems with Dockerized ROS2, CI/CD
+                        pipelines, and GitLab automation, ensuring reliability, modularity, and hardwareagnostic
+                        scalability. I am skilled in AI, Machine Learning, and Computer Vision using PyTorch,
+                        TensorFlow, and OpenCV, leveraging these technologies to enhance automation and data driven
+                        decision making. I specialize in API driven clientserver development, realtime systems, and ROS2
+                        based backends, enabling efficient, low latency communication between components. From intuitive
+                        Flutter UIs to robust backend integrations, I deliver software that is reliable, responsive, and
+                        built for long term scalability.
                         <br>
                         <br>
-                        Passionate about clean code, automation, and continuous improvement, I strive to create
-                        solutions that don’t just work they evolve intelligently with every iteration.
+                        Passionate about writing clean, maintainable code, architecting efficient backend systems, and
+                        creating intuitive user experiences. I value collaboration, continuous improvement, and staying
+                        up
+                        to date with emerging technologies always eager to learn more, expand my skills, and take on new
+                        challenges to deliver smarter, more innovative software solutions.
                     </p>
                 </div>
 
@@ -71,28 +78,28 @@
                     <!-- Socials -->
 
                     <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/ankur-kohli-7a5865157/"><i
+                        <a target="_blank" href="https://www.linkedin.com/in/ankur-kohli-7a5865157/" title="LinkedIn" tooltip-top small-tooltip><i
                                 class="fa-brands fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href="http://www.github.com/ankurkohli007"><i
+                        <a target="_blank" href="http://www.github.com/ankurkohli007" title="GitHub" tooltip-top small-tooltip><i
                                 class="fa-brands fa-github"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.researchgate.net/profile/Ankur-Kohli-4"><i
+                        <a target="_blank" href="https://www.researchgate.net/profile/Ankur-Kohli-4" title="ResearchGate" tooltip-top small-tooltip><i
                                 class="fa-brands fa-researchgate"></i></a>
                     </li>
                     <li>
                         <a
-                            href="mailto:ankurkohli1997007@gmail.com?subject=To book an appointment for the interview.&body=Hello, I'm interested in your profile %26 I would like to discuss more about your background and skills!"><i
+                            href="mailto:ankurkohli1997007@gmail.com?subject=To book an appointment for the interview.&body=Hello, I'm interested in your profile %26 I would like to discuss more about your background and skills!" title="Gmail" tooltip-top small-tooltip><i
                                 class="fa-brands fa-envelope"></i></a>
                     </li>
                 </ul>
 
                 <div class="hero-buttons">
                     <a href="mailto:ankurkohli1997007@gmail.com?subject=To book an appointment for the interview.&body=Hello, I'm interested in your profile %26 I would like to discuss more about your background and skills!"
-                        class="btn btn-primary" title="Got a job opportunity? Let’s work together!">Hire me</a>
-                    <button class="btn btn-dark-outlined">
+                        class="btn btn-primary" title="Let’s work together!" tooltip-bottom>Hire me</a>
+                    <button class="btn btn-dark-outlined" title="Download CV" tooltip-bottom>
                         <a href="./cv/CV_Ankur Kohli.pdf" download>Download CV</a>
                     </button>
                 </div>
@@ -120,7 +127,7 @@
 
         </section>
 
-        <!-- About Section  -->
+        <!-- About Section 
         <section class="about-section" id="about">
 
             <div class="about-img">
@@ -161,7 +168,24 @@
                 </button>
             </div>
 
+        </section> -->
+
+        <!-- Experience Section -->
+        <section class="professional-section" id="professional-experience">
+
+            <!-- <div class="professional-img">
+                <img src="your-image.jpg" alt="Professional Photo">
+            </div> -->
+            <div class="professional-content">
+                <h2>Professional <span>Experience</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <!-- <button><a href="#">View Profile</a></button> -->
+            </div>
+
         </section>
+
+
 
         <!-- Projects Section -->
         <section class="projects-section" id="projects">
@@ -178,7 +202,7 @@
                         </p>
                     </div>
                     <div class="projects-card-box__buttons">
-                        <button class="btn btn-dark-outlined">
+                        <button class="btn btn-dark-outlined" title="View Project" tooltip-bottom>
                             <a target="_blank" href="https://ankurkohli007.github.io/Restaurant-Website-HTML-CSS/">View
                                 Project <i class="fa-solid fa-external-link"></i></a>
                         </button>
@@ -196,7 +220,7 @@
                         </p>
                     </div>
                     <div class="projects-card-box__buttons">
-                        <button class="btn btn-dark-outlined">
+                        <button class="btn btn-dark-outlined" title="View Project" tooltip-bottom>
                             <a target="_blank" href="https://youtu.be/3dDWKMFSGl0?si=kdKeFMuSSkVejtp-">View Project on
                                 YouTube <i class="fa-solid fa-external-link"></i></a>
                             <br>
@@ -220,7 +244,7 @@
                         </p>
                     </div>
                     <div class="projects-card-box__buttons">
-                        <button class="btn btn-dark-outlined">
+                        <button class="btn btn-dark-outlined" title="View Project" tooltip-bottom>
                             <a href="https://github.com/ankurkohli007/Cervical-Cancer-Detection-CNNs-VGG16-module-TensorFlow.git"
                                 target="_blank">View Project <i class="fa-solid fa-external-link"></i></a>
                         </button>
@@ -240,7 +264,7 @@
                         </p>
                     </div>
                     <div class="projects-card-box__buttons">
-                        <button class="btn btn-dark-outlined">
+                        <button class="btn btn-dark-outlined" title="View Project" tooltip-bottom>
                             <a href="https://github.com/ankurkohli007/Research_Track_I_Assignment_3?tab=readme-ov-file#performance-of-mobile-robot-control"
                                 target="_blank">View Project <i class="fa-solid fa-external-link"></i></a>
                         </button>
@@ -260,7 +284,7 @@
                         </p>
                     </div>
                     <div class="projects-card-box__buttons">
-                        <button class="btn btn-dark-outlined">
+                        <button class="btn btn-dark-outlined" title="View Project" tooltip-bottom>
                             <a href="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II#outcomes"
                                 target="_blank">View Project <i class="fa-solid fa-external-link"></i></a>
                         </button>
@@ -269,7 +293,7 @@
 
 
                 <div class="projects-card-box__buttons">
-                    <button class="btn btn-dark-outlined">
+                    <button class="btn btn-dark-outlined" title="View all project" tooltip-bottom>
                         <a href="allprojects.html" target="_blank">View all projects <i
                                 class="fa-solid fa-external-link"></i></a>
                     </button>
@@ -303,7 +327,7 @@
                                 fill="#000" transform="rotate(90 50 50)">12</text>
                         </svg>
                         <a href="https://www.researchgate.net/profile/Ankur-Kohli-4/publications" target="_blank"
-                            style="text-decoration: none; color: blue; font-size: 14px; font-weight: bold;">Patents</a>
+                            style="text-decoration: none; color: blue; font-size: 14px; font-weight: bold;" title="View Patents" tooltip-bottom small-tooltip>Patents</a>
                     </div>
 
                     <div class="gauge" style="text-align: center;">
@@ -315,7 +339,7 @@
                                 fill="#000" transform="rotate(90 50 50)">2</text>
                         </svg>
                         <a href="https://www.researchgate.net/profile/Ankur-Kohli-4/publications" target="_blank"
-                            style="text-decoration: none; color: green; font-size: 14px; font-weight: bold;">Book
+                            style="text-decoration: none; color: green; font-size: 14px; font-weight: bold;" title="View Book Chapters" tooltip-bottom small-tooltip>Book
                             Chapters</a>
                     </div>
 
@@ -328,7 +352,7 @@
                                 fill="#000" transform="rotate(90 50 50)">24</text>
                         </svg>
                         <a href="https://www.researchgate.net/profile/Ankur-Kohli-4/publications" target="_blank"
-                            style="text-decoration: none; color: red; font-size: 14px; font-weight: bold;">Conference
+                            style="text-decoration: none; color: red; font-size: 14px; font-weight: bold;" title="View Conference Papers" tooltip-bottom small-tooltip>Conference
                             Papers</a>
                     </div>
 
@@ -341,7 +365,7 @@
                                 fill="#000" transform="rotate(90 50 50)">29</text>
                         </svg>
                         <a href="https://www.researchgate.net/profile/Ankur-Kohli-4/publications" target="_blank"
-                            style="text-decoration: none; color: purple; font-size: 14px; font-weight: bold;">Research
+                            style="text-decoration: none; color: purple; font-size: 14px; font-weight: bold;" title="View Research Score" tooltip-bottom small-tooltip>Research
                             Score</a>
                     </div>
 
@@ -354,7 +378,7 @@
                                 fill="#000" transform="rotate(90 50 50)">3</text>
                         </svg>
                         <a href="https://www.researchgate.net/profile/Ankur-Kohli-4/publications" target="_blank"
-                            style="text-decoration: none; color: orange; font-size: 14px; font-weight: bold;">Citations</a>
+                            style="text-decoration: none; color: orange; font-size: 14px; font-weight: bold;" title="View Citations" tooltip-bottom small-tooltip>Citations</a>
                     </div>
 
                     <div class="gauge" style="text-align: center;">
@@ -366,7 +390,7 @@
                                 fill="#000" transform="rotate(90 50 50)">6</text>
                         </svg>
                         <a href="https://www.researchgate.net/profile/Ankur-Kohli-4/publications" target="_blank"
-                            style="text-decoration: none; color: orangered; font-size: 14px; font-weight: bold;">h-index</a>
+                            style="text-decoration: none; color: orangered; font-size: 14px; font-weight: bold;" title="View h-index" tooltip-bottom small-tooltip>h-index</a>
                     </div>
                 </div>
 
@@ -397,18 +421,18 @@
 
             <div class="contact-container">
                 <!-- LinkedIn -->
-                <a class="contact-btn" target="_blank" href="https://www.linkedin.com/in/ankur-kohli-7a5865157/">
+                <a class="contact-btn" target="_blank" href="https://www.linkedin.com/in/ankur-kohli-7a5865157/" title="LinkedIn" tooltip-bottom>
                     <i class="fa-brands fa-linkedin"></i> LinkedIn
                 </a>
 
                 <!-- Gmail -->
                 <a class="contact-btn" target="_blank"
-                    href="mailto:ankurkohli1997007@gmail.com?subject=To book an appointment for the interview.&body=Hello, I'm interested in your profile %26 I would like to discuss more about your background and skills!">
+                    href="mailto:ankurkohli1997007@gmail.com?subject=To book an appointment for the interview.&body=Hello, I'm interested in your profile %26 I would like to discuss more about your background and skills!" title="Gmail" tooltip-bottom>
                     <i class="fa-solid fa-envelope"></i> Gmail
                 </a>
 
                 <!-- Phone -->
-                <a class="contact-btn" href="tel:+39 3452 355 116">
+                <a class="contact-btn" href="tel:+39 3452 355 116" title="Phone" tooltip-bottom>
                     <i class="fa-solid fa-phone"></i> Phone
                 </a>
             </div>
@@ -421,8 +445,8 @@
             Rights
             Reserved.</p>
         <div class="footer-buttons">
-            <button data-theme="./css/style1.css" class="footer__theme1 active-theme">Style 1</button>
-            <button data-theme="./css/style2.css" class="footer__theme2">Style 2</button>
+            <button data-theme="./css/style1.css" class="footer__theme1 active-theme" title="Style 1" tooltip-top>Style 1</button>
+            <button data-theme="./css/style2.css" class="footer__theme2" title="Style 2" tooltip-top>Style 2</button>
         </div>
 
     </footer>

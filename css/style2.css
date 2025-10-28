@@ -171,6 +171,80 @@ ul.social-icons {
   transition: all 0.3s ease 0s;
 }
 
+/* General tooltip styling */
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+/* Tooltip arrow */
+[data-tooltip]::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Show tooltip on hover */
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before {
+  opacity: 1;
+}
+
+/* Tooltip above */
+[data-tooltip][tooltip-top]::after {
+  bottom: 145%;
+  /* above the element */
+}
+
+[data-tooltip][tooltip-top]::before {
+  bottom: 145%;
+  border-color: var(--primary) transparent transparent transparent;
+  /* arrow pointing down */
+}
+
+/* Tooltip below */
+[data-tooltip][tooltip-bottom]::after {
+  top: 125%;
+  /* below the element */
+}
+
+[data-tooltip][tooltip-bottom]::before {
+  top: 115%;
+  border-color: transparent transparent var(--primary) transparent;
+  /* arrow pointing up */
+}
+
+/* Smaller padding only for elements with .small-tooltip */
+[small-tooltip]::after {
+  padding: 2px 4px;
+  font-size: 10px;
+}
+
+
 /* Career Section */
 section.career-section {
   background-color: var(--dark-secondary);
@@ -220,7 +294,7 @@ section.career-section {
   font-size: 15px;
 }
 
-/* About Section */
+/* About Section
 section.about-section {
   background-color: var(--dark-primary);
   color: #fff;
@@ -266,7 +340,57 @@ section.about-section {
 .about-content button>a {
   text-decoration: none;
   color: var(--dark-primary);
+} */
+
+/* Professional Section */
+
+section.professional-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
 }
+
+/* .professional-img img {
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  box-shadow: 3px 5px 30px #613026;
+  object-fit: cover;
+} */
+
+.professional-content {
+  margin-left: 100px;
+  max-width: 600px;
+}
+
+.professional-content h2 {
+  font-size: 33px;
+}
+
+.professional-content h2>span {
+  color: var(--primary);
+}
+
+.professional-content p {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.professional-content button {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+/* .professional-content button>a {
+  text-decoration: none;
+  color: var(--dark-primary);
+} */
+
 
 /* Projects Section */
 section.projects-section {
