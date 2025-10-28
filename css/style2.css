@@ -343,8 +343,219 @@ section.about-section {
 } */
 
 /* Professional Section */
-
 section.professional-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.professional-content {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  /* vertically center both elements */
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  /* space between left and right sections */
+}
+
+/* Adjusting Heading */
+.professional-content h1 {
+  text-align: center;
+}
+
+/* --- pro_exp1 --- */
+.pro_exp1 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px; /* space between job title and h4 */
+  color: #fff;
+}
+
+/* Software Engineer & Date pro_exp1 */
+.pro_exp1 h2 span {
+  margin-left: 525px; /* adjust this value to control space */
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.pro_exp1 h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px; /* space before bullet points */
+  color: #fff;
+}
+
+/* NTT Data Italia & Country pro_exp1 */
+.pro_exp1 h4 span {
+  margin-left: 825px; /* adjust this value to control space */
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.pro_exp1 ul {
+  padding-left: 20px; /* indentation for bullets */
+  margin-top: 10px;   /* space below h4 */
+  list-style-type: disc;
+}
+
+.pro_exp1 ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* --- pro_exp2 --- */
+.pro_exp2 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px; /* space between job title and h4 */
+  color: #fff;
+}
+
+/* Software Engineer & Date pro_exp2 */
+.pro_exp2 h2 span {
+  margin-left: 565px; /* adjust this value to control space */
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.pro_exp2 h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px; /* space before bullet points */
+  color: #fff;
+}
+
+/* NTT Data Italia & Country pro_exp2 */
+.pro_exp2 h4 span {
+  margin-left: 805px; /* adjust this value to control space */
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.pro_exp2 ul {
+  padding-left: 20px; /* indentation for bullets */
+  margin-top: 10px;   /* space below h4 */
+  list-style-type: disc;
+}
+
+.pro_exp2 ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+
+/* Default: text left, heading right */
+.professional-content.normal {
+  flex-direction: row;
+}
+
+/* When swapped: heading left, text right */
+/* .professional-content.reverse {
+  flex-direction: row-reverse;
+  gap: 150px;  */
+  /* heading left, text right */
+/* } */
+
+/* Stack pro_exp1 above pro_exp2 vertically */
+.professional-content.reverse {
+  flex-direction: column;
+  gap: 40px; /* adjust space between pro_exp1 and pro_exp2 */
+  align-items: flex-start; /* optional: left-align content */
+}
+
+
+
+/* LEFT TEXT SECTION */
+.left-text {
+  flex: 1;
+  /* take equal width */
+}
+
+.left-text p {
+  color: var(--text-color);
+  font-size: 15px;
+  text-align: left;
+  margin: 0;
+}
+
+/* RIGHT HEADING SECTION */
+.right-heading {
+  width: 100%;
+  /* take equal width */
+  display: flex;
+  justify-content: center;
+  /* pushes heading to the far right */
+  align-items: center;
+  /* vertically centers it */
+  text-align: right;
+  margin-bottom: auto;
+}
+
+.right-heading h1 {
+  font-size: 33px;
+  margin: 0;
+}
+
+.right-heading h1 span {
+  color: var(--primary);
+}
+
+.pro_exp1 h2 span {
+  color: var(--primary);
+}
+
+/* Optional: Responsive layout for mobile */
+@media (max-width: 768px) {
+  .professional-content {
+    flex-direction: column;
+    /* stack on small screens */
+    text-align: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .professional-content {
+      flex-direction: column !important;
+      text-align: center;
+    }
+  }
+
+
+  .right-heading {
+    /* justify-content: center; */
+    text-align: center;
+  }
+
+  .left-text {
+    text-align: center;
+  }
+
+  .pro_exp1, .pro_exp2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+/* section.professional-section {
   background-color: var(--dark-primary);
   color: #fff;
   display: flex;
@@ -353,7 +564,7 @@ section.professional-section {
   padding: 60px;
 }
 
-/* .professional-img img {
+.professional-img img {
   width: 250px;
   height: 250px;
   padding: 2px;
@@ -361,7 +572,7 @@ section.professional-section {
   border: 3px solid var(--primary);
   box-shadow: 3px 5px 30px #613026;
   object-fit: cover;
-} */
+}
 
 .professional-content {
   margin-left: 100px;
@@ -386,7 +597,7 @@ section.professional-section {
   font-size: 15px;
 }
 
-/* .professional-content button>a {
+.professional-content button>a {
   text-decoration: none;
   color: var(--dark-primary);
 } */
