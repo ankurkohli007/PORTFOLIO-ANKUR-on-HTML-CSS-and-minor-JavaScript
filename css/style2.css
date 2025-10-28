@@ -294,54 +294,6 @@ section.career-section {
   font-size: 15px;
 }
 
-/* About Section
-section.about-section {
-  background-color: var(--dark-primary);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px;
-}
-
-.about-img img {
-  width: 250px;
-  height: 250px;
-  padding: 2px;
-  border-radius: 50%;
-  border: 3px solid var(--primary);
-  box-shadow: 3px 5px 30px #613026;
-  object-fit: cover;
-}
-
-.about-content {
-  margin-left: 100px;
-  max-width: 600px;
-}
-
-.about-content h2 {
-  font-size: 33px;
-}
-
-.about-content h2>span {
-  color: var(--primary);
-}
-
-.about-content p {
-  color: var(--text-color);
-  font-size: 15px;
-}
-
-.about-content button {
-  margin-top: 30px;
-  font-size: 15px;
-}
-
-.about-content button>a {
-  text-decoration: none;
-  color: var(--dark-primary);
-} */
-
 /* Professional Section */
 section.professional-section {
   background-color: var(--dark-primary);
@@ -466,21 +418,12 @@ section.professional-section {
   flex-direction: row;
 }
 
-/* When swapped: heading left, text right */
-/* .professional-content.reverse {
-  flex-direction: row-reverse;
-  gap: 150px;  */
-  /* heading left, text right */
-/* } */
-
 /* Stack pro_exp1 above pro_exp2 vertically */
 .professional-content.reverse {
   flex-direction: column;
   gap: 40px; /* adjust space between pro_exp1 and pro_exp2 */
   align-items: flex-start; /* optional: left-align content */
 }
-
-
 
 /* LEFT TEXT SECTION */
 .left-text {
@@ -553,55 +496,6 @@ section.professional-section {
     gap: 20px;
   }
 }
-
-
-/* section.professional-section {
-  background-color: var(--dark-primary);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px;
-}
-
-.professional-img img {
-  width: 250px;
-  height: 250px;
-  padding: 2px;
-  border-radius: 50%;
-  border: 3px solid var(--primary);
-  box-shadow: 3px 5px 30px #613026;
-  object-fit: cover;
-}
-
-.professional-content {
-  margin-left: 100px;
-  max-width: 600px;
-}
-
-.professional-content h2 {
-  font-size: 33px;
-}
-
-.professional-content h2>span {
-  color: var(--primary);
-}
-
-.professional-content p {
-  color: var(--text-color);
-  font-size: 15px;
-}
-
-.professional-content button {
-  margin-top: 30px;
-  font-size: 15px;
-}
-
-.professional-content button>a {
-  text-decoration: none;
-  color: var(--dark-primary);
-} */
-
 
 /* Projects Section */
 section.projects-section {
