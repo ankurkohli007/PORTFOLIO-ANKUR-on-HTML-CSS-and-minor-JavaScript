@@ -1122,3 +1122,64 @@ footer a {
     font-size: 14px;
   }
 }
+
+/* ===============================
+   Landscape & Screen Resize Fixes
+   =============================== */
+
+/* Fix scaling issue in mobile landscape mode */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  html, body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  header {
+    position: relative;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .career-section,
+  .publications-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .career-content,
+  .publications-content {
+    margin: 0;
+    max-width: 90%;
+  }
+
+  footer {
+    position: relative;
+    width: 100%;
+  }
+}
+/* Prevent unwanted horizontal overflow on all devices */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
