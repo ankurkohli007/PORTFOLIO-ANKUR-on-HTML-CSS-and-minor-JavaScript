@@ -1122,9 +1122,6 @@ footer a {
     font-size: 14px;
   }
 }
-
-}
-
 /* ===============================
    Landscape & Screen Resize Fixes
    =============================== */
@@ -1175,6 +1172,7 @@ footer a {
     width: 100%;
   }
 }
+
 /* Prevent unwanted horizontal overflow on all devices */
 html, body {
   max-width: 100%;
