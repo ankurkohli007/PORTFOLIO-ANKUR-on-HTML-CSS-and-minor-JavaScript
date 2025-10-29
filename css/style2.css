@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
 
 /* Global variables */
@@ -918,226 +922,147 @@ footer a {
 }
 
 /* ======================================================
-   UNIVERSAL RESPONSIVE FIXES (add at the end of your CSS)
+   UNIVERSAL RESPONSIVE FIXES - ADD AT END OF CSS
    ====================================================== */
 
-/* Tablets & smaller laptops */
+/* Ensure the page never cuts off horizontally */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all images and videos responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Large tablets / small laptops */
 @media (max-width: 1024px) {
   header {
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 20px 30px;
   }
 
-  header ul {
+  .nav-links ul {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  section.hero-section {
-    padding: 120px 60px 50px 60px;
+  .hero-section {
     flex-direction: column;
     text-align: center;
+    padding: 100px 40px 50px;
   }
 
   .hero-img img {
-    margin: 30px 0 0 0;
     width: 80%;
+    margin: 30px auto;
   }
 
-  section.career-section {
+  .career-section, .publications-section {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 40px;
-    padding: 60px 40px;
+    padding: 60px 30px;
   }
 
-  .career-img img {
-    margin: 0;
+  .career-content, .publications-content {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
-  .career-content {
-    margin: 0;
-  }
-
-  section.publications-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 40px;
-    gap: 40px;
-  }
-
-  .publications-content {
-    margin: 0;
-  }
-
-  .projects-section {
-    padding: 60px 40px;
-  }
-
-  .professional-content {
-    flex-direction: column;
-    text-align: left;
-    align-items: flex-start;
-    padding: 0 40px;
-  }
-
-  .pro_exp1 h2 span,
-  .pro_exp2 h2 span,
-  .pro_exp1 h4 span,
-  .pro_exp2 h4 span {
-    margin-left: 0 !important;
-    display: block;
-    margin-top: 4px;
+  .projects-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
   }
 }
 
-/* Tablets and Large Phones (Portrait Mode) */
+/* Tablets and large phones */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    padding: 15px 20px;
   }
 
-  header .logo {
-    margin: 0 0 10px 0;
-  }
-
-  header ul {
+  .nav-links ul {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    align-items: flex-start;
   }
 
-  section.hero-section {
-    padding: 130px 30px 50px 30px;
-  }
-
-  .hero-section__title {
-    font-size: 32px;
-  }
-
-  .hero-img img {
-    display: none;
-  }
-
-  section.career-section,
-  section.publications-section {
-    padding: 50px 20px;
-    gap: 30px;
-  }
-
-  .career-content h2,
-  .publications-content h2 {
-    font-size: 26px;
-  }
-
-  .career-content p,
-  .publications-content p {
-    font-size: 14px;
-  }
-
-  .projects-section {
-    padding: 40px 20px;
-  }
-
-  .projects-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .pro_exp1, .pro_exp2 {
-    padding: 0 10px;
-  }
-
-  .pro_exp1 h2 span,
-  .pro_exp2 h2 span,
-  .pro_exp1 h4 span,
-  .pro_exp2 h4 span {
-    margin-left: 0 !important;
-    display: block;
-    text-align: left;
-  }
-
-  .contact-container {
-    flex-direction: column;
-  }
-}
-
-/* Phones */
-@media (max-width: 480px) {
-  header {
-    padding: 15px;
-  }
-
-  header ul li {
-    margin-right: 15px;
+  .hero-section {
+    padding: 80px 20px 40px;
   }
 
   .hero-section__title {
     font-size: 28px;
   }
 
+  .career-section img,
+  .publications-section img {
+    width: 220px;
+    height: auto;
+  }
+
+  .projects-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px 15px;
+  }
+
+  .hero-section__title {
+    font-size: 24px;
+  }
+
   .hero-section__desc {
     font-size: 14px;
   }
 
-  .career-img img,
-  .publications-img img {
-    width: 180px;
-    height: 180px;
-  }
-
-  .career-content h2,
-  .publications-content h2 {
-    font-size: 24px;
-  }
-
-  .projects-section h2 {
-    font-size: 22px;
-  }
-
-  .contact-section h2 {
-    font-size: 22px;
-  }
-
-  .contact-btn {
-    width: 80%;
-    justify-content: center;
+  .career-section, .publications-section {
+    padding: 40px 20px;
   }
 
   footer {
+    text-align: center;
     font-size: 12px;
-    padding: 15px 5px;
+    padding: 15px 10px;
   }
 
   footer .footer-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
-  }
-
-  .pro_exp1 ul li,
-  .pro_exp2 ul li {
-    font-size: 14px;
+    gap: 6px;
   }
 }
 
-/* ===============================
-   Landscape & Screen Resize Fixes
-   =============================== */
-
-/* Fix scaling issue in mobile landscape mode */
-@media screen and (max-height: 480px) and (orientation: landscape) {
+/* Landscape fix for phones */
+@media screen and (orientation: landscape) and (max-height: 500px) {
   html, body {
-    width: 100%;
     height: auto;
-    overflow-x: hidden;
     overflow-y: auto;
-  }
-
-  header {
-    position: relative;
   }
 
   section {
@@ -1146,40 +1071,7 @@ footer a {
 
   .hero-section {
     flex-direction: column;
-    padding-top: 100px;
     text-align: center;
+    padding-top: 80px;
   }
-
-  .hero-img img {
-    width: 80%;
-    margin: 20px auto;
-  }
-
-  .career-section,
-  .publications-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .career-content,
-  .publications-content {
-    margin: 0;
-    max-width: 90%;
-  }
-
-  footer {
-    position: relative;
-    width: 100%;
-  }
-}
-/* Prevent unwanted horizontal overflow on all devices */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
 }
