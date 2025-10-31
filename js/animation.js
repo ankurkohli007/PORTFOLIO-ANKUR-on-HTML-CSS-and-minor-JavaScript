@@ -2,8 +2,8 @@ const values = [
     { id: "circle1", textIdA: "text1a", target: 12 },
     { id: "circle2", textIdA: "text2a", target: 2 },
     { id: "circle3", textIdA: "text3a", target: 2 },
-    { id: "circle4", textIdA: "text4a", target: 24.2 },
-    { id: "circle5", textIdA: "text5a", target: 29 },
+    { id: "circle4", textIdA: "text4a", target: 35.9 },
+    { id: "circle5", textIdA: "text5a", target: 51 },
     { id: "circle6", textIdA: "text6a", target: 3 }
 ];
 
