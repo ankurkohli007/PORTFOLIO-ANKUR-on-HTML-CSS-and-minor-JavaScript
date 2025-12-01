@@ -344,95 +344,125 @@ section.career-section {
 /* =====================
    PROFESSIONAL SECTION
    ===================== */
-section.professional-section {
-  background-color: var(--dark-primary);
-  color: #fff;
-  padding: clamp(2rem, 4vh, 3rem) clamp(1.5rem, 5vw, 3rem);
-}
-
-.professional-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: clamp(2rem, 5vh, 3rem);
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.professional-content h1 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  width: 100%;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.professional-content h1 span {
-  color: var(--primary);
-}
-
-/* Experience blocks */
-.pro_exp1,
-.pro_exp2 {
-  width: 100%;
-}
-
-.pro_exp1 h2,
-.pro_exp2 h2 {
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
-.pro_exp1 h2 span,
-.pro_exp2 h2 span {
-  font-size: clamp(0.875rem, 2vw, 1rem);
-  font-weight: 400;
-  color: var(--primary);
-  margin-left: auto;
-}
-
-.pro_exp1 h4,
-.pro_exp2 h4 {
-  font-size: clamp(1rem, 2.5vw, 1.125rem);
-  font-weight: 500;
-  margin: 0.75rem 0;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
-.pro_exp1 h4 span,
-.pro_exp2 h4 span {
-  font-size: clamp(0.875rem, 2vw, 1rem);
-  font-weight: 400;
-  color: var(--primary);
-  margin-left: auto;
-}
-
-.pro_exp1 ul,
-.pro_exp2 ul {
-  padding-left: 1.5rem;
-  margin-top: 0.75rem;
-  list-style-type: disc;
-}
-
-.pro_exp1 ul li,
-.pro_exp2 ul li {
-  margin-bottom: 0.75rem;
-  font-size: clamp(0.875rem, 2vw, 0.9375rem);
-  line-height: 1.6;
-  color: #ccc;
-}
+   section.professional-section {
+    background-color: var(--dark-primary);
+    color: #fff;
+    padding: clamp(3rem, 4vh, 4rem) clamp(2rem, 5vw, 3rem) clamp(4rem, 6vh, 5rem);
+  }
+  
+  .professional-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(2.5rem, 5vh, 4rem);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .professional-content h1 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  
+  .professional-content h1 span {
+    color: var(--primary);
+  }
+  
+  /* Experience blocks */
+  .pro_exp1,
+  .pro_exp2 {
+    width: 100%;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    background: linear-gradient(145deg, rgba(30, 27, 27, 0.5), rgba(0, 0, 0, 0.3));
+    border-radius: 12px;
+    border-left: 4px solid var(--primary);
+    transition: var(--transition-smooth);
+  }
+  
+  .pro_exp1:hover,
+  .pro_exp2:hover {
+    transform: translateX(8px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-left-width: 6px;
+  }
+  
+  .pro_exp1 h2,
+  .pro_exp2 h2 {
+    font-size: clamp(1.375rem, 3vw, 1.875rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: -0.3px;
+  }
+  
+  .pro_exp1 h2 span,
+  .pro_exp2 h2 span {
+    font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+    font-weight: 500;
+    color: var(--primary);
+    margin-left: auto;
+    letter-spacing: 0.5px;
+  }
+  
+  .pro_exp1 h4,
+  .pro_exp2 h4 {
+    font-size: clamp(1.0625rem, 2.5vw, 1.25rem);
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0.95;
+  }
+  
+  .pro_exp1 h4 span,
+  .pro_exp2 h4 span {
+    font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+    font-weight: 400;
+    color: var(--primary);
+    margin-left: auto;
+  }
+  
+  .pro_exp1 ul,
+  .pro_exp2 ul {
+    padding-left: 1.75rem;
+    margin-top: 1rem;
+    list-style-type: none;
+  }
+  
+  .pro_exp1 ul li,
+  .pro_exp2 ul li {
+    margin-bottom: 1rem;
+    font-size: clamp(0.9375rem, 2vw, 1rem);
+    line-height: 1.8;
+    color: #d0d0d0;
+    position: relative;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+  }
+  
+  .pro_exp1 ul li::before,
+  .pro_exp2 ul li::before {
+    content: '▹';
+    position: absolute;
+    left: -1.5rem;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
 
 /* =====================
    CERTIFICATE SECTION
@@ -624,88 +654,6 @@ section.professional-section {
     }
 }
 
-/* =====================
-   PROJECTS SECTION
-   ===================== */
-/* section.projects-section {
-  background-color: var(--dark-secondary);
-  color: #fff;
-  padding: clamp(3rem, 8vh, 5rem) clamp(1.5rem, 5vw, 3rem);
-}
-
-.projects-section h2 {
-  font-size: clamp(1.5rem, 4vw, 1.75rem);
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.projects-section h2 > span {
-  color: var(--primary);
-}
-
-.projects-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-  gap: clamp(1.5rem, 3vw, 2.5rem);
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.projects-card-box {
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.projects-card-box:hover {
-  box-shadow: 3px 5px 20px #613026;
-  transform: translateY(-2px);
-}
-
-.projects-card-box__icons > i {
-  font-size: clamp(1.5rem, 4vw, 1.875rem);
-  border-radius: 50%;
-  border: 1px solid var(--primary);
-  padding: clamp(1rem, 3vw, 1.25rem);
-}
-
-.projects-card-box:hover .projects-card-box__icons > i {
-  color: var(--primary);
-  background-color: var(--dark-secondary);
-}
-
-.projects-card-box__desc h4 {
-  font-size: clamp(1rem, 2.5vw, 1.125rem);
-  margin: 1rem 0 0.75rem 0;
-}
-
-.projects-card-box__desc p {
-  font-size: clamp(0.875rem, 2vw, 0.9375rem);
-  color: var(--text-color);
-  line-height: 1.5;
-}
-
-.projects-card-box__buttons {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.projects-card-box__buttons button {
-  background-color: var(--dark-secondary);
-}
-
-.projects-card-box__buttons button > a {
-  text-decoration: none;
-  font-size: clamp(0.8125rem, 2vw, 0.875rem);
-  color: #fff;
-} */
-
-/* =====================
-   PROJECTS SECTION
-   ===================== */
 /* =====================
    PROJECTS SECTION
    ===================== */
